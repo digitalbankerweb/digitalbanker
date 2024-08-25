@@ -1,0 +1,142 @@
+
+body::-webkit-scrollbar{
+    width: 9px;
+    color: green;
+    background-color: rgb(221, 221, 221);
+}
+
+body::-webkit-scrollbar-thumb{
+    width: 2px;
+    color: green;
+    background-color: rgb(43, 161, 93);
+}
+
+body::-webkit-scrollbar-track{
+    width: 2px;
+    color: green;
+    background-color: rgb(221, 221, 221);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 1100;
+    top: 0;
+    left: auto;
+    right: 0;
+    backdrop-filter: blur(8px);
+    background-color: rgb(255, 255, 255,0.5);
+    height: 70px;
+    box-shadow: 0px 0px 9px 1px lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(120deg,rgb(7, 179, 202),rgb(14, 194, 110),rgb(255, 174, 0),rgb(247, 0, 136));
+    box-shadow: 0px 3px 13px 3px rgb(219, 219, 219);
+}
+
+
+.home-container{
+    position: relative;
+    margin-top:200px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(228, 228, 228);
+}
+
+.menuBtn{
+    margin: 20px;
+    border: 1px solid #ebebeb;
+    color: rgb(104, 103, 103);
+    cursor: pointer;
+
+}
+
+.profile-holder{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #d6d4d4;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    margin: 20px;
+    padding-bottom: 0px;
+    transition: all 0.7s ease-in-out;
+}
+.profile-holder :hover{
+    padding: 2px ;
+    padding-bottom: 0px;
+}
+
+.children{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(48, 47, 47);
+    margin-top: 200px;
+}
+
+.btn-holder{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* transform: translate(0%,-50%); */
+    position: relative;
+    margin-right: -17px;
+}
+
+.btn-holder .btn{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(223, 223, 223);
+    color: rgb(121, 121, 121);
+    border: 0px solid transparent;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0px 1px 8px 0.5px rgb(179, 178, 178);
+    transition: all 0.1s ease;
+    text-decoration: none;
+}
+
+.btn-holder .btn:hover{
+    padding: 12px ;
+}
+
+input{
+    font-size: 17px;
+    font-weight: 500;
+    color: gray;
+    
+}
+
+.link{
+    color: gray;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+}
