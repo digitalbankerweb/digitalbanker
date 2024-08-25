@@ -1,0 +1,39 @@
+
+
+.btn{
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    border: 0px solid transparent;
+    text-align: center;
+    font-weight: 600;
+    font-size: 19px;
+    cursor: pointer;
+    
+}
+
+
+.flexbox-data{
+    width: 400px;
+    min-height: 200px;
+    max-height: fit-content;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 19px;
+    font-weight: 300;
+    padding: 30px;
+    margin-top: 55px;
+    margin-bottom: 40px;
+
+}
+
+.full{
+    width: 90%;
+}
